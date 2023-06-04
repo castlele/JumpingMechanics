@@ -1,0 +1,17 @@
+fc8a56933c4b1c8d796fdb8f7a9f9475
+::res://::1685901915
+icon.svg::CompressedTexture2D::1271902724317512059::1685864273::1685879112::1::::<><>::
+README.md::TextFile::-1::1685901844::0::1::::<><>::
+::res://assets/::1685879112
+experimental_block.png::CompressedTexture2D::5733862198751962994::1685866412::1685879112::1::::<><>::
+jump_experiment_background.png::CompressedTexture2D::5237340073372607505::1685873694::1685879112::1::::<><>::
+player-baton-16x16.png::CompressedTexture2D::8371539763212524790::1685866296::1685879112::1::::<><>::
+player-baton-running-16x16.png::CompressedTexture2D::1506907282493817856::1685866338::1685879112::1::::<><>::
+::res://nodes/::1685879405
+animation_manager.gd::GDScript::-1::1685868555::0::1::::AnimationManager<>Node2D<>::
+block.tscn::PackedScene::7608582901574922001::1685879405::0::1::::<><>::uid://cnxr4w3bkq8qo
+player.gd::GDScript::-1::1685878744::0::1::::Player<>CharacterBody2D<>::
+player.tscn::PackedScene::170274881412656917::1685878407::0::1::::<><>::uid://drjibisq72vy1<>res://nodes/player.gd<>uid://vp7spppqe7yq<>res://nodes/animation_manager.gd
+::res://scenes/::1685879119
+height_meter_scene.gd::GDScript::-1::1685878977::0::1::::<>Node2D<>::
+height_meter_scene.tscn::PackedScene::4280232033759951402::1685879119::0::1::::<><>::uid://dgnwiptkmp1dl<>res://scenes/height_meter_scene.gd<>uid://coqnxgxr3nl2<>uid://cgvahxb1b3fef

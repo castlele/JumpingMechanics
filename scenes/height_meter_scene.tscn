@@ -1,0 +1,92 @@
+[gd_scene load_steps=5 format=3 uid="uid://b18m2cpwuiqoo"]
+
+[ext_resource type="PackedScene" uid="uid://dgnwiptkmp1dl" path="res://nodes/block.tscn" id="1_0imon"]
+[ext_resource type="Script" path="res://scenes/height_meter_scene.gd" id="1_mautb"]
+[ext_resource type="PackedScene" uid="uid://coqnxgxr3nl2" path="res://nodes/player.tscn" id="2_xx1lh"]
+[ext_resource type="Texture2D" uid="uid://cgvahxb1b3fef" path="res://assets/jump_experiment_background.png" id="3_kox50"]
+
+[node name="HeightMeterScene" type="Node2D"]
+script = ExtResource("1_mautb")
+
+[node name="block" parent="." instance=ExtResource("1_0imon")]
+position = Vector2(8, 232)
+
+[node name="block2" parent="." instance=ExtResource("1_0imon")]
+position = Vector2(24, 232)
+
+[node name="block3" parent="." instance=ExtResource("1_0imon")]
+position = Vector2(40, 232)
+
+[node name="block4" parent="." instance=ExtResource("1_0imon")]
+position = Vector2(56, 232)
+
+[node name="block5" parent="." instance=ExtResource("1_0imon")]
+position = Vector2(72, 232)
+
+[node name="block6" parent="." instance=ExtResource("1_0imon")]
+position = Vector2(88, 232)
+
+[node name="block7" parent="." instance=ExtResource("1_0imon")]
+position = Vector2(104, 232)
+
+[node name="block8" parent="." instance=ExtResource("1_0imon")]
+position = Vector2(120, 232)
+
+[node name="block9" parent="." instance=ExtResource("1_0imon")]
+position = Vector2(136, 232)
+
+[node name="block10" parent="." instance=ExtResource("1_0imon")]
+position = Vector2(152, 232)
+
+[node name="block11" parent="." instance=ExtResource("1_0imon")]
+position = Vector2(168, 232)
+
+[node name="block12" parent="." instance=ExtResource("1_0imon")]
+position = Vector2(184, 232)
+
+[node name="block13" parent="." instance=ExtResource("1_0imon")]
+position = Vector2(200, 232)
+
+[node name="block14" parent="." instance=ExtResource("1_0imon")]
+position = Vector2(216, 232)
+
+[node name="block15" parent="." instance=ExtResource("1_0imon")]
+position = Vector2(232, 232)
+
+[node name="block16" parent="." instance=ExtResource("1_0imon")]
+position = Vector2(248, 232)
+
+[node name="block17" parent="." instance=ExtResource("1_0imon")]
+position = Vector2(264, 232)
+
+[node name="block18" parent="." instance=ExtResource("1_0imon")]
+position = Vector2(280, 232)
+
+[node name="block19" parent="." instance=ExtResource("1_0imon")]
+position = Vector2(296, 232)
+
+[node name="block20" parent="." instance=ExtResource("1_0imon")]
+position = Vector2(312, 232)
+
+[node name="block21" parent="." instance=ExtResource("1_0imon")]
+position = Vector2(328, 232)
+
+[node name="block22" parent="." instance=ExtResource("1_0imon")]
+position = Vector2(344, 232)
+
+[node name="block23" parent="." instance=ExtResource("1_0imon")]
+position = Vector2(360, 232)
+
+[node name="block24" parent="." instance=ExtResource("1_0imon")]
+position = Vector2(376, 232)
+
+[node name="block25" parent="." instance=ExtResource("1_0imon")]
+position = Vector2(392, 232)
+
+[node name="Player" parent="." instance=ExtResource("2_xx1lh")]
+z_index = 10
+position = Vector2(56, 192)
+
+[node name="JumpExperimentBackground" type="Sprite2D" parent="."]
+position = Vector2(201, 104)
+texture = ExtResource("3_kox50")
