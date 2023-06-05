@@ -1,2 +1,4 @@
 res://scenes/height_meter_scene.tscn
-res://README.md
+res://nodes/player_preferences.tres
+res://scenes/height_meter_scene.gd
+res://nodes/player.tscn

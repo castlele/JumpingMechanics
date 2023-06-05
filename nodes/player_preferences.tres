@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="PlayerPreferences" load_steps=2 format=3 uid="uid://dhuiiuu1p5vjn"]
+
+[ext_resource type="Script" path="res://nodes/player_Preferences.gd" id="1_jblwk"]
+
+[resource]
+script = ExtResource("1_jblwk")
+move_speed = 150.0
+jump_height = 96.0
+jump_time_to_peak = 0.5
+jump_time_to_descent = 0.5
+is_double_jump_available = true

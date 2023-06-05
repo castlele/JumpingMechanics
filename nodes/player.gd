@@ -2,14 +2,16 @@ class_name Player extends CharacterBody2D
 
 const MAX_JUMP_COUNT = 2
 
-@export var move_speed = 300.0
-@export var jump_height = 150.0
-@export var jump_time_to_peak = 0.5
-@export var jump_time_to_descent = 0.4
-@export var is_double_jump_available = true
+@export var preferences: PlayerPreferences = preload("res://nodes/player_preferences.tres")
 
 @onready var animationManager = $AnimationManager
 @onready var animatedSprite = $AnimatedSprite2D
+
+@onready var move_speed = preferences.move_speed
+@onready var jump_height = preferences.jump_height
+@onready var jump_time_to_peak = preferences.jump_time_to_peak
+@onready var jump_time_to_descent = preferences.jump_time_to_descent
+@onready var is_double_jump_available = preferences.is_double_jump_available
 
 @onready var jump_velocity = (2 * jump_height) / jump_time_to_peak * -1
 @onready var jump_gravity = ((-2 * jump_height) / pow(jump_time_to_peak, 2.0)) * -1
@@ -53,7 +55,6 @@ func jump(delta: float):
     if Input.is_action_just_pressed("jump"):
         velocity.y = jump_velocity
         _jump_count += 1
-
 
 # MARK: - Helper methods
 
