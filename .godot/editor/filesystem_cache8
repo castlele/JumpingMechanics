@@ -1,5 +1,5 @@
 fc8a56933c4b1c8d796fdb8f7a9f9475
-::res://::1685970572
+::res://::1685973834
 icon.svg::CompressedTexture2D::1271902724317512059::1685864273::1685879112::1::::<><>::
 README.md::TextFile::-1::1685968005::0::1::::<><>::
 ::res://assets/::1685970572
@@ -10,13 +10,13 @@ player-baton-running-16x16.png::CompressedTexture2D::1506907282493817856::168586
 toggle_button_off.png::CompressedTexture2D::3201359106970174982::1685970569::1685970572::1::::<><>::
 toggle_button_on.png::CompressedTexture2D::1840770214628947268::1685970569::1685970572::1::::<><>::
 ::res://demo/::1685970572
-::res://nodes/::1685968150
+::res://nodes/::1685972656
 animation_manager.gd::GDScript::-1::1685868555::0::1::::AnimationManager<>Node2D<>::
 block.tscn::PackedScene::7608582901574922001::1685879405::0::1::::<><>::uid://cnxr4w3bkq8qo
 player.gd::GDScript::-1::1685966014::0::1::::Player<>CharacterBody2D<>::
-player.tscn::PackedScene::170274881412656917::1685968150::0::1::::<><>::uid://drjibisq72vy1<>res://nodes/player.gd<>uid://vp7spppqe7yq<>res://nodes/animation_manager.gd
+player.tscn::PackedScene::170274881412656917::1685972656::0::1::::<><>::uid://drjibisq72vy1<>res://nodes/player.gd<>uid://vp7spppqe7yq<>res://nodes/animation_manager.gd
 player_Preferences.gd::GDScript::-1::1685965719::0::1::::PlayerPreferences<>Resource<>::
 player_preferences.tres::Resource/PlayerPreferences::7692372616485757235::1685968136::0::1::::<><>::res://nodes/player_Preferences.gd
-::res://scenes/::1685968150
-height_meter_scene.gd::GDScript::-1::1685968150::0::1::::<>Node2D<>::
-height_meter_scene.tscn::PackedScene::4280232033759951402::1685968150::0::1::::<><>::uid://dgnwiptkmp1dl<>res://scenes/height_meter_scene.gd<>uid://coqnxgxr3nl2<>uid://cgvahxb1b3fef
+::res://scenes/::1685973299
+height_meter_scene.gd::GDScript::-1::1685973299::0::1::::<>Node2D<>::
+height_meter_scene.tscn::PackedScene::4280232033759951402::1685972656::0::1::::<><>::uid://dgnwiptkmp1dl<>res://scenes/height_meter_scene.gd<>uid://coqnxgxr3nl2<>uid://cgvahxb1b3fef<>uid://blu06f1viutsw<>uid://1hxhmjeee8a7
