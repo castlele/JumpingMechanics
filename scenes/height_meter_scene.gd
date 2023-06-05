@@ -6,6 +6,7 @@ const TILE_SIZE = 16.0
 
 @onready var player: = $Player
 @onready var settingsLabel: = $SettingsLabel
+@onready var settingsToggle: = $SettingsToggle
 
 var minX = 0.0
 var maxX = ProjectSettings.get_setting("display/window/size/viewport_width")
@@ -14,8 +15,26 @@ var maxX = ProjectSettings.get_setting("display/window/size/viewport_width")
 func _ready():
     show_config()
 
+    settingsToggle.button_pressed = not is_config_hidden
+
 
 func _physics_process(_delta: float):
+    teleport()
+
+
+func show_config():
+    if is_config_hidden:
+        settingsLabel.hide()
+        return
+
+    var properties = player.preferences.get_property_list().filter(Callable(self, "filter_properties"))
+    var settings = create_settings(properties)
+
+    settingsLabel.text = str(settings)
+    settingsLabel.show()
+
+
+func teleport():
     var pos: Vector2 = player.position
 
     if pos.x < minX:
@@ -23,15 +42,11 @@ func _physics_process(_delta: float):
     elif pos.x > maxX:
         player.position.x = minX + TILE_SIZE
 
+# MARK: - Actions
 
-func show_config():
-    if is_config_hidden:
-        return
-
-    var properties = player.preferences.get_property_list().filter(Callable(self, "filter_properties"))
-    var settings = create_settings(properties)
-
-    settingsLabel.text = str(settings)
+func _on_settings_toggle_toggled(button_pressed: bool):
+    is_config_hidden = not button_pressed
+    show_config()
 
 # MARK: - Helpers
 
