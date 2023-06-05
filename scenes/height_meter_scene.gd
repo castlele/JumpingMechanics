@@ -2,6 +2,8 @@ extends Node2D
 
 const TILE_SIZE = 16.0
 
+@export var is_config_hidden = false
+
 @onready var player: = $Player
 @onready var settingsLabel: = $SettingsLabel
 
@@ -10,10 +12,7 @@ var maxX = ProjectSettings.get_setting("display/window/size/viewport_width")
 
 
 func _ready():
-    var properties = player.preferences.get_property_list().filter(Callable(self, "filter_properties"))
-    var settings = create_settings(properties)
-
-    settingsLabel.text = str(settings)
+    show_config()
 
 
 func _physics_process(_delta: float):
@@ -23,6 +22,16 @@ func _physics_process(_delta: float):
         player.position.x = maxX - TILE_SIZE
     elif pos.x > maxX:
         player.position.x = minX + TILE_SIZE
+
+
+func show_config():
+    if is_config_hidden:
+        return
+
+    var properties = player.preferences.get_property_list().filter(Callable(self, "filter_properties"))
+    var settings = create_settings(properties)
+
+    settingsLabel.text = str(settings)
 
 # MARK: - Helpers
 
